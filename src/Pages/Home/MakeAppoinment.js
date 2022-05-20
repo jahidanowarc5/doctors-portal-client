@@ -1,0 +1,26 @@
+import React from 'react';
+import doctor from '../../assets/images/doctor.png'
+import appoinment from '../../assets/images/appointment.png'
+import PrimaryButton from '../Shared/PrimaryButton';
+
+const MakeAppoinment = () => {
+    return (
+        <section 
+        style={{
+            background:`url(${appoinment})`
+        }}
+        className='flex justify-center items-center'>
+            <div className='flex-1 hidden lg:block'>
+                <img className='mt-[-100px]' src={doctor} alt="" />
+            </div>
+            <div className='flex-1 px-5'>
+                <h3 className='text-xl text-primary font-bold'>Appoinment</h3>
+                <h2 className='text-4xl text-white py-5'>Make an appoinment</h2>
+                <p className='text-white pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum, vitae perferendis in dolorum modi expedita nemo? Iusto veniam velit molestiae dolorum incidunt enim! Deleniti vero facilis asperiores, sed ratione voluptas exercitationem cumque voluptate eligendi possimus quibusdam modi commodi sapiente!</p>
+                <PrimaryButton>GET STARTED</PrimaryButton>
+            </div>
+        </section>
+    );
+};
+
+export default MakeAppoinment;
